@@ -21,7 +21,7 @@ public class User {
     private String lastNmae;
 
     @Column(unique = true)
-    private String Document;
+    private String document;
 
     @Column(unique = true)
     private String email;
