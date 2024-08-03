@@ -1,10 +1,10 @@
-package com.picpay.challenge.transaction;
+package com.picpay.challenge.domain.transaction;
 
+import com.picpay.challenge.domain.user.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import com.picpay.challenge.user.User;
 
 import java.math.BigDecimal;
 
@@ -28,5 +28,7 @@ public class Transaction {
     @ManyToOne
     @JoinColumn(name = "receiver_id")
     private User receiver;
+
+
 
 }
