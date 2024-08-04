@@ -49,8 +49,8 @@ public class TransactionService {
      this.userService.saveUser(sender);
      this.userService.saveUser(receiver);
 
-    this.notificationService.sendNotififcation(sender, "Transação realizada com sucesso");
-    this.notificationService.sendNotififcation(receiver,"Transação recebida com sucesso");
+    this.notificationService.sendNotification(sender, "Transação realizada com sucesso");
+    this.notificationService.sendNotification(receiver,"Transação recebida com sucesso");
 
      return newTransaction;
 
